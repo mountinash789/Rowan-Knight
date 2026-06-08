@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Confirmation - School Hindu Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            --primary-crimson: #800020;
+            --accent-gold: #D4AF37;
+            --dark-gold: #AA7C11;
+            --warm-ivory: #FFFDF9;
+            --text-dark: #333333;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f1e3;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 0);
+            background-size: 24px 24px;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .confirmation-container {
+            background-color: var(--warm-ivory);
+            max-width: 550px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 4px double var(--accent-gold);
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Festive decorative corners */
+        
+        .confirmation-container::before,
+        .confirmation-container::after {
+            content: "✦";
+            position: absolute;
+            color: var(--accent-gold);
+            font-size: 28px;
+        }
+        
+        .confirmation-container::before {
+            top: 15px;
+            left: 20px;
+        }
+        
+        .confirmation-container::after {
+            top: 15px;
+            right: 20px;
+        }
+        
+        .subtitle {
+            font-size: 1rem;
+            color: var(--dark-gold);
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--primary-crimson);
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            color: var(--accent-gold);
+            font-size: 1.8rem;
+            margin: 15px 0;
+        }
+        
+        .attendance-status {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            color: var(--primary-crimson);
+            font-weight: 700;
+            background-color: rgba(212, 175, 55, 0.15);
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 25px;
+            border: 1px solid var(--accent-gold);
+            letter-spacing: 1px;
+        }
+        
+        .details-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--primary-crimson);
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+        
+        .details-row {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+        
+        .details-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .label {
+            font-weight: 600;
+            color: var(--primary-crimson);
+            display: inline-block;
+            width: 140px;
+        }
+        
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .namaste {
+            font-family: 'Cinzel', serif;
+            color: var(--dark-gold);
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+        /* Responsive Breakpoints */
+        
+        @media (max-width: 480px) {
+            .confirmation-container {
+                padding: 35px 20px;
+            }
+            h1 {
+                font-size: 1.9rem;
+            }
+            .attendance-status {
+                font-size: 1.1rem;
+                width: 100%;
+            }
+            .label {
+                display: block;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="confirmation-container">
+        <h1>Wedding RSVP Confirmation</h1>
+
+        <div class="attendance-status">
+            Joyfully Accepts
+        </div>
+
+        <p class="message">
+            We are absolutely delighted to attend the upcoming school Hindu wedding.
+        </p>
+
+        <div class="details-box">
+            <div class="details-row">
+                <span class="label">Parent Names:</span>
+                <span>Jessica & Rowan Knight</span>
+            </div>
+            <div class="details-row">
+                <span class="label">Student Name:</span>
+                <span>Isabel Knight</span>
+            </div>
+            <div class="details-row">
+                <span class="label">Total Attendees:</span>
+                <span>2</span>
+            </div>
+        </div>
+
+        <div class="namaste">Namaste & Thank You</div>
+    </div>
+
+</body>
+
+</html>
